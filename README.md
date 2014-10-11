@@ -4,11 +4,11 @@
 
 If you are using SSD, you will realized the size does matter. The images are build from official binaries or source code. Just remove the unnecessary files e.g. document, man, libs and replacing the whole OS with busybox.
 
-|name|versions|size|
+|image|size|versions|
 |-----|--------|-----|
-|microbox/**redis**|`latest` `2.8.17` `2.8.16` `2.8.15` `2.8.14` `2.8.13` `2.8.12` `2.8.11` `2.8.10` `2.6.17`| 7 MB | 
-|microbox/**rethinkdb**|`latest` `1.15.1` `1.15.0`| 50 MB |
-|microbox/**etcd**|`latest` `0.4.6`| 17 MB |
+|microbox/**redis**|7MB | `latest` `2.8.17` `2.8.16` `2.8.15` `2.8.14` `2.8.13` `2.8.12` `2.8.11` `2.8.10` `2.6.17`| 
+|microbox/**rethinkdb**|50MB |`latest` `1.15.1` `1.15.0`| 
+|microbox/**etcd**|17MB |`latest` `0.4.6`| 
 |-----|-------|-----|
 
 
