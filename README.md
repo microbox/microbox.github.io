@@ -18,8 +18,6 @@ Really, you shouldn't put the whole OS into the docker image at most of the time
 Please vote [here](https://github.com/microbox/microbox.github.io/issues), we will add more images according to your suggestions.
 
 ### Links
-[Docker](http://docker.io)
-
-[Busybox](http://busybox.net)
-
-[Buildroot](http://buildroot.uclibc.org)
+- [Docker](http://docker.io)
+- [Busybox](http://busybox.net)
+- [Buildroot](http://buildroot.uclibc.org)
