@@ -9,7 +9,6 @@ If you are using SSD, you will realized the size does matter. The images are bui
 |microbox/**redis**|7MB | `latest` `2.8.17` `2.8.16` `2.8.15` `2.8.14` `2.8.13` `2.8.12` `2.8.11` `2.8.10` `2.6.17`| 
 |microbox/**rethinkdb**|50MB |`latest` `1.15.1` `1.15.0`| 
 |microbox/**etcd**|17MB |`latest` `0.4.6`| 
-|-----|-------|-----|
 
 
 ### Don't use docker like a Virtual Machine
