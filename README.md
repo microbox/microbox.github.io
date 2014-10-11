@@ -2,7 +2,7 @@
 
 ### Congrats. You found the smallest docker images
 
-If you are using SSD, you will realized the size does matter. The images are build from official binaries or source code. Just remove the unnecessary files e.g. document, man, libs and replacing the whole OS with busybox.
+If you are using SSD, you will realized the size does matter. The images are build from official binaries or source code using buildroot. Then remove the unnecessary files e.g. document, man, libs and replacing the whole OS with busybox.
 
 |image|size|versions|
 |-----|--------|-----|
@@ -17,5 +17,7 @@ Really, you shouldn't put the whole OS into the docker image at most of the time
 ### I want more **Microbox** images
 Please vote [here](https://github.com/microbox/microbox.github.io/issues), we will add more images according to your suggestions.
 
-### Authors
-@e2tox
+### Links
+[Docker](http://docker.io)
+[Busybox](http://busybox.net)
+[Buildroot](http://buildroot.uclibc.org)
