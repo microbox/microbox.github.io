@@ -35,8 +35,6 @@
 <h3>
 <a name="congrats-you-found-the-smallest-docker-images" class="anchor" href="#congrats-you-found-the-smallest-docker-images"><span class="octicon octicon-link"></span></a>Congrats. You found the smallest docker images</h3>
 
-<p>If you are using SSD, you will realized the size does matter. The images are build from official binaries or source code using buildroot. Then remove the unnecessary files e.g. document, man, libs and replacing the whole OS with busybox.</p>
-
 <table>
 <thead>
 <tr>
@@ -67,11 +65,18 @@
 <code>latest</code> <code>0.4.6</code>
 </td>
 </tr>
+<tr>
+<td><a href="https://registry.hub.docker.com/u/microbox/dockerui/">microbox/<strong>dockerui</strong></a></td>
+<td>16MB</td>
+<td>
+<code>latest</code> <code>0.4.0</code>
+</td>
+</tr>
 </tbody>
 </table>
 
 <h3>
-<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
 
 <div class="highlight highlight-bash"><pre>docker run --rm -ti microbox/redis:latest --help
 </pre></div>
@@ -81,6 +86,21 @@
 
 <div class="highlight highlight-bash"><pre>docker run --rm -ti microbox/etcd:latest --help
 </pre></div>
+
+<h3>
+<a name="manage-docker-in-browser" class="anchor" href="#manage-docker-in-browser"><span class="octicon octicon-link"></span></a>Manage docker in browser</h3>
+
+<div class="highlight highlight-bash"><pre>docker run -d -p 9000:9000 -v /var/run/docker.sock:/docker.sock microbox/dockerui
+</pre></div>
+
+<p>Visit http://docker-ip:9000/ to see the WebUI for docker</p>
+
+<h3>
+<a name="why-its-so-small" class="anchor" href="#why-its-so-small"><span class="octicon octicon-link"></span></a>Why it's so small?</h3>
+
+<p>If you are using SSD, you will realized the size does matter. The images are build from official binaries or source code using buildroot. Then remove the unnecessary files e.g. compilers, head file, cli tools, documents, man, libs and replacing the whole OS with busybox.</p>
+
+<p>The images are only include the essential files that is required for that particular application. This is something like JRE.</p>
 
 <h3>
 <a name="dont-use-docker-like-a-virtual-machine" class="anchor" href="#dont-use-docker-like-a-virtual-machine"><span class="octicon octicon-link"></span></a>Don't use docker like a Virtual Machine</h3>
