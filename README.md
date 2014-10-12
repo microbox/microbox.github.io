@@ -36,9 +36,9 @@ docker run -d -p 9000:9000 -v /var/run/docker.sock:/docker.sock microbox/dockeru
 ```
 
 ### Why it's so small?
-If you are using SSD, you will realized the size does matter. The images are build from official binaries or source code using buildroot. Then remove the unnecessary files e.g. head file, cli tools, documents, man, libs and replacing the whole OS with busybox.
+If you are using SSD, you will realized the size does matter. The images are build from official binaries or source code using buildroot. Then remove the unnecessary files e.g. compilers, head file, cli tools, documents, man, libs and replacing the whole OS with busybox.
 
-The images are only include the essential files that is required for that particular application.
+The images are only include the essential files that is required for that particular application. This is something like JRE.
 
 
 ### Don't use docker like a Virtual Machine
