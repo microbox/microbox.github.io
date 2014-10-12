@@ -14,6 +14,12 @@
 CLI images are coming soon.
 
 
+### Known Issues
+
+- [#8518](https://github.com/docker/docker/issues/8518) The automated build of Docker Hub will duoble the image size.
+We are switching to manual build until Docker Hub resolve this issue.
+
+
 ### Usage
 
 
@@ -52,7 +58,9 @@ Really, you shouldn't put the whole OS into the docker image at most of the time
 ### I want more **Microbox** images
 Please vote [here](https://github.com/microbox/microbox.github.io/issues), we will add more images according to your suggestions.
 
+
 ### Links
+
 - [Microbox](http://microbox.io/)
 - [Docker](http://docker.io)
 - [Busybox](http://busybox.net)
