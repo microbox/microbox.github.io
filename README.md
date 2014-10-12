@@ -1,4 +1,4 @@
-# **Microbox** <sup>beta</sup>
+# **Microbox**
 
 ### Congrats. You found the smallest docker images
 
