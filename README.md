@@ -35,6 +35,8 @@ docker run --rm -ti microbox/etcd:latest --help
 docker run -d -p 9000:9000 -v /var/run/docker.sock:/docker.sock microbox/dockerui
 ```
 
+Visit http://docker-ip:9000/ to see the WebUI for docker
+
 ### Why it's so small?
 If you are using SSD, you will realized the size does matter. The images are build from official binaries or source code using buildroot. Then remove the unnecessary files e.g. compilers, head file, cli tools, documents, man, libs and replacing the whole OS with busybox.
 
