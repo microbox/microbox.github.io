@@ -15,16 +15,16 @@ If you are using SSD, you will realized the size does matter. The images are bui
 
 
 ```bash
-docker run --rm -ti microbox/redis --help
+docker run --rm -ti microbox/redis:latest --help
 ```
 
 
 ```bash
-docker run --rm -ti microbox/rethinkdb --help
+docker run --rm -ti microbox/rethinkdb:latest --help
 ```
 
 ```bash
-docker run --rm -ti microbox/etcd --help
+docker run --rm -ti microbox/etcd:latest --help
 ```
 
 ### Don't use docker like a Virtual Machine
