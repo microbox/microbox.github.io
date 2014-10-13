@@ -1,6 +1,6 @@
 # **Microbox**
 
-### Congrats. You found the smallest docker images
+### Congrats! You found the smallest docker images
 
 
 |image|size|versions|
