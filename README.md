@@ -54,7 +54,7 @@ Visit http://docker-ip:9000/ to see the WebUI for docker
 ### Why it's so small?
 If you are using SSD, you will realized the size does matter. The images are build from official binaries or source code using buildroot. Then remove the unnecessary files e.g. compilers, head file, cli tools, documents, man, libs and replacing the whole OS with busybox.
 
-The images are only include the essential files that is required for that particular application. This is something like JRE, for the applications in production.
+The images are only include the essential files that is strictly required for that particular application. If say in Java words. The offical images is JDK. Microbox is JRE.
 
 
 ### Don't ship your software with OS
