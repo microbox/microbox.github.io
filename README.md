@@ -1,6 +1,6 @@
 # **Microbox**
 
-### Congrats! You found the smallest docker images
+### Congrats! You found the smallest docker images for distribution.
 
 
 |image|size|versions|
@@ -9,6 +9,7 @@
 |[microbox/**rethinkdb**](https://registry.hub.docker.com/u/microbox/rethinkdb/)|50MB |`latest` `1.15.1` `1.15.0`| 
 |[microbox/**etcd**](https://registry.hub.docker.com/u/microbox/etcd/)|17MB |`latest` `0.4.6`| 
 |[microbox/**dockerui**](https://registry.hub.docker.com/u/microbox/dockerui/)|16MB |`latest` `0.4.0`| 
+|[microbox/**gogs**](https://registry.hub.docker.com/u/microbox/gogs/)|39MB |`latest` `0.5.6`| 
 
 
 CLI images are coming soon.
@@ -36,6 +37,11 @@ docker run --rm -ti microbox/rethinkdb:latest --help
 docker run --rm -ti microbox/etcd:latest --help
 ```
 
+### Lanuch your first gogs server
+
+```bash
+docker run -d -p 22:22 -p 3000:3000 -v /data/gogs:/data microbox/gogs:latest --name gogs
+```
 
 ### Manage docker in browser
 
