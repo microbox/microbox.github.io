@@ -58,7 +58,7 @@ The images are only include the essential files that is required for that partic
 
 
 ### Don't use docker like a Virtual Machine
-Really, you shouldn't put the whole OS into the docker image at most of the time. Docker is using Linux [namespace (cgroup)](http://en.wikipedia.org/wiki/Cgroups) to isolate the processes. It's more like a process management tool. Most of the files are not required to run your application. You don't need include them when you ship your image as a service. If you want to see what's happen in the container, please use [nsenter](https://github.com/jpetazzo/nsenter) instead ssh into the container.
+Really, you shouldn't put the whole OS into the docker image at most of the time. Docker is using Linux [namespace (cgroup)](http://en.wikipedia.org/wiki/Cgroups) to isolate the processes. It's more like a process management tool. Most of the files are not required to run your application. You don't need include them when you ship your image as a service. If you want to see what's happen in the container, please use [nsenter](https://github.com/jpetazzo/nsenter) or `docker exec` in Docker 1.3.
 
 
 ### I want more **Microbox** images
