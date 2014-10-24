@@ -57,7 +57,7 @@ If you are using SSD, you will realized the size does matter. The images are bui
 The images are only include the essential files that is required for that particular application. This is something like JRE, for the applications in production.
 
 
-### Don't use docker like a Virtual Machine
+### Don't ship your software with OS
 Really, you shouldn't put the whole OS into the docker image at most of the time. Docker is using Linux [namespace (cgroup)](http://en.wikipedia.org/wiki/Cgroups) to isolate the processes. It's more like a process management tool. Most of the files are not required to run your application. You don't need include them when you ship your image as a service. If you want to see what's happen in the container, please use [nsenter](https://github.com/jpetazzo/nsenter) or `docker exec` in Docker 1.3.
 
 
