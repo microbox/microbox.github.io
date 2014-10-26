@@ -12,7 +12,7 @@
 |[microbox/**gogs**](https://registry.hub.docker.com/u/microbox/gogs/)|39MB |`latest` `0.5.6`| 
 
 
-CLI images are coming soon.
+New website is coming soon.
 
 
 ### Known Issues
