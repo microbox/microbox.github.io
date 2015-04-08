@@ -2,9 +2,9 @@
 
 ### Congrats! You found the smallest docker images for distribution.
 
-If some people can reduce their docker image size by 50%, that means they can save half of the expenses on disks and network. 
+If people can reduce their docker image size by 50%. That means they saved half of the expenses on disks and network.
 
-But we can reduce the size up to 90%. Redis only 7MB, Etcd only 17MB and Rethinkdb only 50MB. 
+But we can reduce the size above 90%. Redis only 7MB, Etcd only 17MB and Rethinkdb only 50MB.
 
 |image|size|versions|
 |-----|--------|-----|
@@ -17,7 +17,7 @@ But we can reduce the size up to 90%. Redis only 7MB, Etcd only 17MB and Rethink
 
 ### Known Issues
 
-- [#8518](https://github.com/docker/docker/issues/8518) The automated build of Docker Hub will duoble the image size.
+- [#8518](https://github.com/docker/docker/issues/8518) [#5632](https://github.com/docker/docker/issues/5632) The automated build of Docker Hub will duoble the image size.
 We are switching to manual build until Docker Hub resolve this issue.
 
 
