@@ -71,6 +71,13 @@
 <code>latest</code> <code>0.6.1</code> <code>0.5.6</code>
 </td>
 </tr>
+<tr>
+<td><a href="https://registry.hub.docker.com/u/microbox/pgweb/">microbox/<strong>pgweb</strong></a></td>
+<td>15MB</td>
+<td>
+<code>latest</code> <code>0.5.1</code>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -95,7 +102,12 @@ We are switching to manual build until Docker Hub resolve this issue.</li>
 <h3>
 <a id="lanuch-your-first-gogs-server" class="anchor" href="#lanuch-your-first-gogs-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lanuch your first gogs server</h3>
 
-<div class="highlight highlight-bash"><pre>docker run -d -p 22:22 -p 3000:3000 -v /data/gogs:/data microbox/gogs:latest --name gogs</pre></div>
+<div class="highlight highlight-bash"><pre>docker run -d -p 22:22 -p 3000:3000 -v /data/gogs:/data microbox/gogs</pre></div>
+
+<h3>
+<a id="manage-your-postgres-database" class="anchor" href="#manage-your-postgres-database" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manage your postgres database</h3>
+
+<div class="highlight highlight-bash"><pre>docker run -d -p 8080:8080 -e URL=<span class="pl-s"><span class="pl-pds">"</span>postgres://user:password@host:port/database?sslmode=[mode]<span class="pl-pds">"</span></span> microbox/pgweb</pre></div>
 
 <h3>
 <a id="manage-docker-in-browser" class="anchor" href="#manage-docker-in-browser" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manage docker in browser</h3>
