@@ -2,6 +2,9 @@
 
 ### Congrats! You found the smallest docker images for distribution.
 
+If some people can reduce their docker image size by 50%, that means they can save half of the expenses on disks and network. 
+
+But we can reduce the size up to 90%. Redis only 7MB, Etcd only 17MB and Rethinkdb only 50MB. 
 
 |image|size|versions|
 |-----|--------|-----|
@@ -10,9 +13,6 @@
 |[microbox/**etcd**](https://registry.hub.docker.com/u/microbox/etcd/)|17MB |`latest` `0.4.9` `0.4.6`| 
 |[microbox/**dockerui**](https://registry.hub.docker.com/u/microbox/dockerui/)|16MB |`latest` `0.4.0`| 
 |[microbox/**gogs**](https://registry.hub.docker.com/u/microbox/gogs/)|39MB |`latest` `0.5.6`| 
-
-
-New website is coming soon.
 
 
 ### Known Issues
