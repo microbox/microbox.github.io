@@ -13,7 +13,7 @@ But we can reduce the size above 90%. Redis only 7MB, Etcd only 17MB and Rethink
 |[microbox/**etcd**](https://registry.hub.docker.com/u/microbox/etcd/)|17MB |`latest` `0.4.9` `0.4.6`| 
 |[microbox/**dockerui**](https://registry.hub.docker.com/u/microbox/dockerui/)|16MB |`latest` `0.5.0` `0.4.0`| 
 |[microbox/**gogs**](https://registry.hub.docker.com/u/microbox/gogs/)|44MB |`latest` `0.6.1` `0.5.6`| 
-
+|[microbox/**pgweb**](https://registry.hub.docker.com/u/microbox/pgweb/)|15MB |`latest` `0.5.1`| 
 
 ### Known Issues
 
@@ -23,11 +23,9 @@ We are switching to manual build until Docker Hub resolve this issue.
 
 ### Usage
 
-
 ```bash
 docker run --rm -ti microbox/redis:latest --help
 ```
-
 
 ```bash
 docker run --rm -ti microbox/rethinkdb:latest --help
@@ -40,7 +38,13 @@ docker run --rm -ti microbox/etcd:latest --help
 ### Lanuch your first gogs server
 
 ```bash
-docker run -d -p 22:22 -p 3000:3000 -v /data/gogs:/data microbox/gogs:latest --name gogs
+docker run -d -p 22:22 -p 3000:3000 -v /data/gogs:/data microbox/gogs
+```
+
+### Manage your postgres database
+
+```bash
+docker run -d -p 8080:8080 -e URL="postgres://user:password@host:port/database?sslmode=[mode]" microbox/pgweb
 ```
 
 ### Manage docker in browser
