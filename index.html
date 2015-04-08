@@ -1,38 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Microbox : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Microbox</title>
+    <meta charset="UTF-8">
+    <title>Microbox by microbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Microbox</h1>
+      <h2 class="project-tagline"></h2>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/microbox">View on GitHub</a>
-
-          <h1 id="project_title">Microbox</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="microbox" class="anchor" href="#microbox"><span class="octicon octicon-link"></span></a><strong>Microbox</strong>
+    <section class="main-content">
+      <h1>
+<a id="microbox" class="anchor" href="#microbox" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Microbox</strong>
 </h1>
 
 <h3>
-<a name="congrats-you-found-the-smallest-docker-images-for-distribution" class="anchor" href="#congrats-you-found-the-smallest-docker-images-for-distribution"><span class="octicon octicon-link"></span></a>Congrats! You found the smallest docker images for distribution.</h3>
+<a id="congrats-you-found-the-smallest-docker-images-for-distribution" class="anchor" href="#congrats-you-found-the-smallest-docker-images-for-distribution" aria-hidden="true"><span class="octicon octicon-link"></span></a>Congrats! You found the smallest docker images for distribution.</h3>
+
+<p>If people can reduce their docker image size by 50%. That means they saved half of the expenses on disks and network. </p>
+
+<p>But we can reduce the size up to 90%. Redis only 7MB, Etcd only 17MB and Rethinkdb only 50MB. </p>
 
 <table>
 <thead>
@@ -47,21 +40,21 @@
 <td><a href="https://registry.hub.docker.com/u/microbox/redis/">microbox/<strong>redis</strong></a></td>
 <td>7MB</td>
 <td>
-<code>latest</code> <code>2.8.17</code> <code>2.8.16</code> <code>2.8.15</code> <code>2.8.14</code> <code>2.8.13</code> <code>2.8.12</code> <code>2.8.11</code> <code>2.8.10</code> <code>2.6.17</code>
+<code>latest</code> <code>2.8.19</code> <code>2.8.18</code> <code>2.8.17</code> <code>2.8.16</code> <code>2.8.15</code> <code>2.8.14</code> <code>2.8.13</code> <code>2.8.12</code> <code>2.8.11</code> <code>2.8.10</code> <code>2.6.17</code>
 </td>
 </tr>
 <tr>
 <td><a href="https://registry.hub.docker.com/u/microbox/rethinkdb/">microbox/<strong>rethinkdb</strong></a></td>
 <td>50MB</td>
 <td>
-<code>latest</code> <code>1.15.1</code> <code>1.15.0</code>
+<code>latest</code> <code>1.16.3</code> <code>1.15.1</code> <code>1.15.0</code>
 </td>
 </tr>
 <tr>
 <td><a href="https://registry.hub.docker.com/u/microbox/etcd/">microbox/<strong>etcd</strong></a></td>
 <td>17MB</td>
 <td>
-<code>latest</code> <code>0.4.6</code>
+<code>latest</code> <code>0.4.9</code> <code>0.4.6</code>
 </td>
 </tr>
 <tr>
@@ -81,10 +74,8 @@
 </tbody>
 </table>
 
-<p>New website is coming soon.</p>
-
 <h3>
-<a name="known-issues" class="anchor" href="#known-issues"><span class="octicon octicon-link"></span></a>Known Issues</h3>
+<a id="known-issues" class="anchor" href="#known-issues" aria-hidden="true"><span class="octicon octicon-link"></span></a>Known Issues</h3>
 
 <ul>
 <li>
@@ -93,50 +84,45 @@ We are switching to manual build until Docker Hub resolve this issue.</li>
 </ul>
 
 <h3>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
 
-<div class="highlight highlight-bash"><pre>docker run --rm -ti microbox/redis:latest --help
-</pre></div>
+<div class="highlight highlight-bash"><pre>docker run --rm -ti microbox/redis:latest --help</pre></div>
 
-<div class="highlight highlight-bash"><pre>docker run --rm -ti microbox/rethinkdb:latest --help
-</pre></div>
+<div class="highlight highlight-bash"><pre>docker run --rm -ti microbox/rethinkdb:latest --help</pre></div>
 
-<div class="highlight highlight-bash"><pre>docker run --rm -ti microbox/etcd:latest --help
-</pre></div>
+<div class="highlight highlight-bash"><pre>docker run --rm -ti microbox/etcd:latest --help</pre></div>
 
 <h3>
-<a name="lanuch-your-first-gogs-server" class="anchor" href="#lanuch-your-first-gogs-server"><span class="octicon octicon-link"></span></a>Lanuch your first gogs server</h3>
+<a id="lanuch-your-first-gogs-server" class="anchor" href="#lanuch-your-first-gogs-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lanuch your first gogs server</h3>
 
-<div class="highlight highlight-bash"><pre>docker run -d -p 22:22 -p 3000:3000 -v /data/gogs:/data microbox/gogs:latest --name gogs
-</pre></div>
+<div class="highlight highlight-bash"><pre>docker run -d -p 22:22 -p 3000:3000 -v /data/gogs:/data microbox/gogs:latest --name gogs</pre></div>
 
 <h3>
-<a name="manage-docker-in-browser" class="anchor" href="#manage-docker-in-browser"><span class="octicon octicon-link"></span></a>Manage docker in browser</h3>
+<a id="manage-docker-in-browser" class="anchor" href="#manage-docker-in-browser" aria-hidden="true"><span class="octicon octicon-link"></span></a>Manage docker in browser</h3>
 
-<div class="highlight highlight-bash"><pre>docker run -d -p 9000:9000 -v /var/run/docker.sock:/docker.sock microbox/dockerui
-</pre></div>
+<div class="highlight highlight-bash"><pre>docker run -d -p 9000:9000 -v /var/run/docker.sock:/docker.sock microbox/dockerui</pre></div>
 
 <p>Visit http://docker-ip:9000/ to see the WebUI for docker</p>
 
 <h3>
-<a name="why-its-so-small" class="anchor" href="#why-its-so-small"><span class="octicon octicon-link"></span></a>Why it's so small?</h3>
+<a id="why-its-so-small" class="anchor" href="#why-its-so-small" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why it's so small?</h3>
 
 <p>If you are using SSD, you will realized the size does matter. The images are build from official binaries or source code using buildroot. Then remove the unnecessary files e.g. compilers, head file, cli tools, documents, man, libs and replacing the whole OS with busybox.</p>
 
 <p>The images are only include the essential files that is strictly required for that particular application. If say in Java words. The official image is JDK. Microbox is JRE.</p>
 
 <h3>
-<a name="dont-ship-your-software-with-os" class="anchor" href="#dont-ship-your-software-with-os"><span class="octicon octicon-link"></span></a>Don't ship your software with OS</h3>
+<a id="dont-ship-your-software-with-os" class="anchor" href="#dont-ship-your-software-with-os" aria-hidden="true"><span class="octicon octicon-link"></span></a>Don't ship your software with OS</h3>
 
 <p>Really, you shouldn't put the whole OS into the docker image at most of the time. Docker is using Linux <a href="http://en.wikipedia.org/wiki/Cgroups">namespace (cgroup)</a> to isolate the processes. It's more like a process management tool. Most of the files are not required to run your application. You don't need include them when you ship your image as a service. If you want to see what's happen in the container, please use <a href="https://github.com/jpetazzo/nsenter">nsenter</a> or <code>docker exec</code> in Docker 1.3.</p>
 
 <h3>
-<a name="i-want-more-microbox-images" class="anchor" href="#i-want-more-microbox-images"><span class="octicon octicon-link"></span></a>I want more <strong>Microbox</strong> images</h3>
+<a id="i-want-more-microbox-images" class="anchor" href="#i-want-more-microbox-images" aria-hidden="true"><span class="octicon octicon-link"></span></a>I want more <strong>Microbox</strong> images</h3>
 
 <p>Please vote <a href="https://github.com/microbox/microbox.github.io/issues">here</a>, we will add more images according to your suggestions.</p>
 
 <h3>
-<a name="links" class="anchor" href="#links"><span class="octicon octicon-link"></span></a>Links</h3>
+<a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h3>
 
 <ul>
 <li><a href="http://microbox.io/">Microbox</a></li>
@@ -144,17 +130,15 @@ We are switching to manual build until Docker Hub resolve this issue.</li>
 <li><a href="http://busybox.net">Busybox</a></li>
 <li><a href="http://buildroot.uclibc.org">Buildroot</a></li>
 </ul>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer class="site-footer">
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-              <script type="text/javascript">
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -165,6 +149,6 @@ We are switching to manual build until Docker Hub resolve this issue.</li>
             } catch(err) {}
           </script>
 
-
   </body>
 </html>
+
