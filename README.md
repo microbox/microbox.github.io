@@ -17,7 +17,7 @@ But we can reduce the size above 90%. Redis only 7MB, Etcd only 17MB and Rethink
 
 ### Known Issues
 
-- [#8518](https://github.com/docker/docker/issues/8518) [#5632](https://github.com/docker/docker/issues/5632) The automated build of Docker Hub will duoble the image size.
+- [#8518](https://github.com/docker/docker/issues/8518) [#5632](https://github.com/docker/docker/issues/5632) The automated build of Docker Hub will double the image size.
 We are switching to manual build until Docker Hub resolve this issue.
 
 
