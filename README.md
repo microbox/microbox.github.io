@@ -13,7 +13,7 @@ But we can reduce the size above 90%. Redis only 7MB, Etcd only 17MB and Rethink
 |[microbox/**gogs**](https://registry.hub.docker.com/u/microbox/gogs/)|44MB |`latest` `0.6.4` `0.6.1` `0.5.6`| 
 |[microbox/**pgweb**](https://registry.hub.docker.com/u/microbox/pgweb/)|15MB |`latest` `0.5.1`| 
 |[microbox/**etcd**](https://registry.hub.docker.com/u/microbox/etcd/)|17MB |`latest` `0.4.9` `0.4.6`| 
-|[microbox/**dockerui**](https://registry.hub.docker.com/u/microbox/dockerui/)|16MB |`latest` `0.5.0` `0.4.0`| 
+|[microbox/**dockerui**](https://registry.hub.docker.com/u/microbox/dockerui/)|16MB |`latest` `0.7.0` `0.5.0` `0.4.0`| 
 
 ### Known Issues
 
