@@ -9,6 +9,7 @@ But we can reduce the size above 90%. Redis only 7MB, Etcd only 17MB and Rethink
 |image|size|versions|
 |-----|--------|-----|
 |[microbox/**rethinkdb**](https://registry.hub.docker.com/u/microbox/rethinkdb/)|68MB |`latest` `2.0.4` `1.16.3` `1.15.1` `1.15.0`| 
+|[microbox/**influxdb**](https://registry.hub.docker.com/u/microbox/influxdb/)|21MB |`latest` `0.9.2`| 
 |[microbox/**redis**](https://registry.hub.docker.com/u/microbox/redis/)|7MB | `latest` `2.8.19` `2.8.18` `2.8.17` `2.8.16` `2.8.15` `2.8.14` `2.8.13` `2.8.12` `2.8.11` `2.8.10` `2.6.17`| 
 |[microbox/**gogs**](https://registry.hub.docker.com/u/microbox/gogs/)|44MB |`latest` `0.6.4` `0.6.1` `0.5.6`| 
 |[microbox/**pgweb**](https://registry.hub.docker.com/u/microbox/pgweb/)|15MB |`latest` `0.6.2` `0.5.1`| 
